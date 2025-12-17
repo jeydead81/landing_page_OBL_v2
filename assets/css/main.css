@@ -1058,6 +1058,22 @@ section,
   transform: scale(1.05);
 }
 
+.steps-2 .connector-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
+  transform: translateY(-14px);
+}
+
+.steps-2 .connector-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 18px;
+}
+
 .steps-2 .step-image {
   position: relative;
   border-radius: 10px;
