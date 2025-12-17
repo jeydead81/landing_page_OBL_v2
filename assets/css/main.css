@@ -797,6 +797,20 @@ section,
   letter-spacing: -0.02em;
 }
 
+.hero-2 .hero-content .hero-title strong {
+  font-weight: 700;
+}
+
+.hero-2 .hero-content .hero-title .typed,
+.hero-2 .hero-content .hero-title .typed-cursor {
+  color: var(--accent-color);
+}
+
+.hero-2 .hero-content .hero-title .hero-tagline {
+  display: block;
+  margin-top: 12px;
+}
+
 .hero-2 .hero-content .hero-typed-heading {
   font-family: var(--heading-font);
   font-weight: 700;
@@ -1769,7 +1783,8 @@ section,
   transform: translateY(-2px);
 }
 
-.features-3 .cta-container {
+.features-3 .cta-container,
+.hero-cta-container {
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -1777,7 +1792,8 @@ section,
   flex-wrap: wrap;
 }
 
-.features-3 .cta-button {
+.features-3 .cta-button,
+.hero-cta-container .cta-button {
   padding: 14px 40px;
   border-radius: 6px;
   font-size: 16px;
@@ -1790,26 +1806,30 @@ section,
   justify-content: center;
 }
 
-.features-3 .cta-primary {
+.features-3 .cta-primary,
+.hero-cta-container .cta-primary {
   background: var(--accent-color);
   color: var(--contrast-color);
   border: 1px solid var(--accent-color);
 }
 
-.features-3 .cta-primary:hover {
+.features-3 .cta-primary:hover,
+.hero-cta-container .cta-primary:hover {
   background: color-mix(in srgb, var(--accent-color), black 8%);
   border-color: color-mix(in srgb, var(--accent-color), black 8%);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.features-3 .cta-secondary {
+.features-3 .cta-secondary,
+.hero-cta-container .cta-secondary {
   background: transparent;
   color: var(--heading-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.features-3 .cta-secondary:hover {
+.features-3 .cta-secondary:hover,
+.hero-cta-container .cta-secondary:hover {
   border-color: var(--accent-color);
   color: var(--accent-color);
   transform: translateY(-2px);
@@ -1839,12 +1859,14 @@ section,
     font-size: 15px;
   }
 
-  .features-3 .cta-container {
+  .features-3 .cta-container,
+  .hero-cta-container {
     flex-direction: column;
     gap: 12px;
   }
 
-  .features-3 .cta-button {
+  .features-3 .cta-button,
+  .hero-cta-container .cta-button {
     width: 100%;
     padding: 13px 32px;
   }
