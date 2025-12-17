@@ -1180,6 +1180,11 @@ section,
   margin-bottom: 60px;
 }
 
+.about-2 .content .description div {
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
 .about-2 .content .description p {
   font-size: 1rem;
   line-height: 1.8;
