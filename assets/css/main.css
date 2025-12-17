@@ -1416,14 +1416,31 @@ section,
   margin-top: 30px;
 }
 
+
 .about-2 .about-image {
   display: flex;
   justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
 }
 
 .about-2 .about-visual {
-  max-width: 480px;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (max-width: 991px) {
+  .about-2 .about-image {
+    height: auto;
+  }
+
+  .about-2 .about-visual {
+    height: auto;
+    max-height: 500px;
+  }
 }
 
 .about-2 .about-highlight {
