@@ -789,7 +789,7 @@ section,
 }
 
 .hero-2 .hero-content .hero-title {
-  font-size: 4rem;
+  font-size: 2.8rem;
   font-weight: 400;
   line-height: 1.1;
   margin-bottom: 24px;
@@ -800,7 +800,7 @@ section,
 .hero-2 .hero-content .hero-typed-heading {
   font-family: var(--heading-font);
   font-weight: 700;
-  font-size: 32px;
+  font-size: 42px;
   color: var(--accent-color);
   margin-bottom: 16px;
 }
@@ -811,51 +811,50 @@ section,
 
 @media (max-width: 768px) {
   .hero-2 .hero-content .hero-typed-heading {
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 
 @media (max-width: 576px) {
   .hero-2 .hero-content .hero-typed-heading {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 
 @media (max-width: 992px) {
   .hero-2 .hero-content .hero-title {
-    font-size: 3.5rem;
+    font-size: 2.45rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero-2 .hero-content .hero-title {
-    font-size: 2.8rem;
+    font-size: 1.96rem;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 576px) {
   .hero-2 .hero-content .hero-title {
-    font-size: 2.2rem;
+    font-size: 1.54rem;
   }
 }
 
-.hero-2 .hero-content .hero-description {
+
+.hero-2 .hero-content .hero-description,
+.hero-2 .hero-content .hero-description.hero-description--white {
   font-size: 1.125rem;
   line-height: 1.6;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--heading-color), transparent 20%);
   margin-bottom: 40px;
   max-width: 580px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.hero-2 .hero-content .hero-description.hero-description--white {
-  color: #fff;
-}
-
 @media (max-width: 768px) {
-  .hero-2 .hero-content .hero-description {
+  .hero-2 .hero-content .hero-description,
+  .hero-2 .hero-content .hero-description.hero-description--white {
     font-size: 1rem;
     margin-bottom: 32px;
   }
