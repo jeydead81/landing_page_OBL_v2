@@ -1412,6 +1412,44 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+.about-2 .result-block {
+  margin-top: 30px;
+}
+
+
+.about-2 .about-image {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+.about-2 .about-visual {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (max-width: 991px) {
+  .about-2 .about-image {
+    height: auto;
+  }
+
+  .about-2 .about-visual {
+    height: auto;
+    max-height: 500px;
+  }
+}
+
+.about-2 .about-highlight {
+  margin-top: 30px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
