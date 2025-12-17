@@ -826,6 +826,10 @@ section,
   margin-right: auto;
 }
 
+.hero-2 .hero-content .hero-description.hero-description--white {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .hero-2 .hero-content .hero-description {
     font-size: 1rem;
