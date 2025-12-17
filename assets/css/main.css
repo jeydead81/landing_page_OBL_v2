@@ -840,22 +840,21 @@ section,
   }
 }
 
-.hero-2 .hero-content .hero-description {
+
+.hero-2 .hero-content .hero-description,
+.hero-2 .hero-content .hero-description.hero-description--white {
   font-size: 1.125rem;
   line-height: 1.6;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--heading-color), transparent 20%);
   margin-bottom: 40px;
   max-width: 580px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.hero-2 .hero-content .hero-description.hero-description--white {
-  color: #fff;
-}
-
 @media (max-width: 768px) {
-  .hero-2 .hero-content .hero-description {
+  .hero-2 .hero-content .hero-description,
+  .hero-2 .hero-content .hero-description.hero-description--white {
     font-size: 1rem;
     margin-bottom: 32px;
   }
