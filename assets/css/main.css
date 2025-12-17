@@ -1792,6 +1792,10 @@ section,
   flex-wrap: wrap;
 }
 
+.hero-2 .hero-cta-container {
+  margin-top: 48px;
+}
+
 .features-3 .cta-button,
 .hero-cta-container .cta-button {
   padding: 14px 40px;
@@ -1804,6 +1808,10 @@ section,
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-2 .hero-cta-container .cta-button {
+  border-radius: 50px;
 }
 
 .features-3 .cta-primary,
