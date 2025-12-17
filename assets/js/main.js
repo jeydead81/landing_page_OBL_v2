@@ -180,4 +180,27 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Hero typed animation
+   */
+  const typedElement = document.querySelector('.typed');
+
+  if (typedElement) {
+    const typedItems = typedElement.getAttribute('data-typed-items');
+
+    if (typedItems) {
+      const items = typedItems.split(',').map(item => item.trim()).filter(item => item.length > 0);
+
+      if (items.length > 0 && typeof Typed !== 'undefined') {
+        new Typed('.typed', {
+          strings: items,
+          loop: true,
+          typeSpeed: 80,
+          backSpeed: 30,
+          backDelay: 2000
+        });
+      }
+    }
+  }
+
 })();

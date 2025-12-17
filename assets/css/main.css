@@ -797,6 +797,30 @@ section,
   letter-spacing: -0.02em;
 }
 
+.hero-2 .hero-content .hero-typed-heading {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--accent-color);
+  margin-bottom: 16px;
+}
+
+.hero-2 .hero-content .hero-typed-heading .typed-cursor {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .hero-2 .hero-content .hero-typed-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-2 .hero-content .hero-typed-heading {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 992px) {
   .hero-2 .hero-content .hero-title {
     font-size: 3.5rem;
