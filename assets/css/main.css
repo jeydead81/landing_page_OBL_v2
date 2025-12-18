@@ -1220,6 +1220,18 @@ section,
   padding-right: 40px;
 }
 
+.about-2 .about-text-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  height: 100%;
+}
+
+.about-2 .section-spacer {
+  height: 32px;
+}
+
 @media (max-width: 992px) {
   .about-2 .content {
     padding-right: 0;
