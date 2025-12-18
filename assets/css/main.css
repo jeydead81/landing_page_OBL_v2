@@ -875,6 +875,12 @@ section,
   margin-right: auto;
 }
 
+.hero-2 .hero-image-showcase .hero-main-image {
+  max-width: 512px;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .hero-2 .hero-content .hero-description,
   .hero-2 .hero-content .hero-description.hero-description--white {
