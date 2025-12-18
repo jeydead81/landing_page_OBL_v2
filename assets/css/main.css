@@ -1228,6 +1228,10 @@ section,
   height: 100%;
 }
 
+.about-2 .section-spacer {
+  height: 32px;
+}
+
 @media (max-width: 992px) {
   .about-2 .content {
     padding-right: 0;
