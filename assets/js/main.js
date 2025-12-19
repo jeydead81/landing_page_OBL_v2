@@ -203,4 +203,50 @@
     }
   }
 
+  /**
+   * Image viewer carousel
+   */
+  document.querySelectorAll('[data-image-viewer]').forEach((viewer) => {
+    const slides = Array.from(viewer.querySelectorAll('[data-image-viewer-slide]'));
+    if (!slides.length) {
+      return;
+    }
+
+    let activeIndex = slides.findIndex((slide) => slide.classList.contains('is-active') || !slide.hasAttribute('hidden'));
+    if (activeIndex === -1) {
+      activeIndex = 0;
+    }
+
+    const setActiveSlide = (nextIndex) => {
+      slides.forEach((slide, index) => {
+        const isActive = index === nextIndex;
+        slide.classList.toggle('is-active', isActive);
+        if (isActive) {
+          slide.removeAttribute('hidden');
+        } else {
+          slide.setAttribute('hidden', '');
+        }
+      });
+    };
+
+    setActiveSlide(activeIndex);
+
+    const prevButton = viewer.querySelector('[data-image-viewer-prev]');
+    const nextButton = viewer.querySelector('[data-image-viewer-next]');
+
+    if (prevButton) {
+      prevButton.addEventListener('click', () => {
+        activeIndex = (activeIndex - 1 + slides.length) % slides.length;
+        setActiveSlide(activeIndex);
+      });
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener('click', () => {
+        activeIndex = (activeIndex + 1) % slides.length;
+        setActiveSlide(activeIndex);
+      });
+    }
+  });
+
 })();

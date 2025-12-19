@@ -150,6 +150,9 @@ h6 {
 .cta-wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .cta-wrapper .btn-getstarted {
@@ -164,6 +167,34 @@ h6 {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cta-subtext {
+  font-size: 15px;
+  color: var(--default-color);
+  text-align: center;
+}
+
+.features-2 .image-viewer-column {
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .features-2 .image-viewer-column {
+    padding-left: 3rem;
+  }
+}
+
+.image-viewer {
+  position: relative;
+}
+
+.image-viewer-slide {
+  display: none;
+}
+
+.image-viewer-slide.is-active {
+  display: block;
 }
 
 @media (max-width: 1200px) {
