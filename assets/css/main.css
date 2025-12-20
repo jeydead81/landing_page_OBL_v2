@@ -2236,6 +2236,10 @@ section,
   padding-left: 30px;
 }
 
+.why-us .feature-content.text-center {
+  padding-left: 0;
+}
+
 .why-us .feature-content h3 {
   font-size: 36px;
   font-weight: 800;
@@ -2267,6 +2271,10 @@ section,
 
 .why-us .feature-content .feature-list .feature-item.feature-text-inline .feature-text {
   text-align: center;
+}
+
+.why-us .feature-content .feature-list .feature-item.feature-text-inline .feature-text h5 {
+  white-space: nowrap;
 }
 
 .why-us .feature-content .feature-list .feature-item .feature-icon {

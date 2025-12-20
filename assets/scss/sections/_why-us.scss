@@ -94,6 +94,10 @@
   .feature-content {
     padding-left: 30px;
 
+    &.text-center {
+      padding-left: 0;
+    }
+
     h3 {
       font-size: 36px;
       font-weight: 800;
@@ -116,6 +120,18 @@
         display: flex;
         align-items: flex-start;
         margin-bottom: 30px;
+
+        &.feature-text-inline {
+          justify-content: center;
+
+          .feature-text {
+            text-align: center;
+
+            h5 {
+              white-space: nowrap;
+            }
+          }
+        }
 
         .feature-icon {
           width: 50px;
