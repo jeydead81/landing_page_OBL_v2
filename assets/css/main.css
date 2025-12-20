@@ -1288,6 +1288,10 @@ section,
   height: 32px;
 }
 
+.about-2 .tiny-spacer {
+  height: 12px;
+}
+
 @media (max-width: 992px) {
   .about-2 .content {
     padding-right: 0;
@@ -2175,6 +2179,14 @@ section,
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
+}
+
+.why-us .feature-content .feature-list .feature-item.feature-text-inline {
+  justify-content: center;
+}
+
+.why-us .feature-content .feature-list .feature-item.feature-text-inline .feature-text {
+  text-align: center;
 }
 
 .why-us .feature-content .feature-list .feature-item .feature-icon {
