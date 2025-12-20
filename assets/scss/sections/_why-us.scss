@@ -115,6 +115,8 @@
 
     .feature-list {
       margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
 
       .feature-item {
         display: flex;
@@ -123,11 +125,13 @@
 
         &.feature-text-inline {
           justify-content: center;
+          width: fit-content;
+          margin: 0 auto;
 
           .feature-text {
             text-align: center;
 
-            h5 {
+            .nowrap {
               white-space: nowrap;
             }
           }
