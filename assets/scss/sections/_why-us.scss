@@ -94,6 +94,10 @@
   .feature-content {
     padding-left: 30px;
 
+    &.text-center {
+      padding-left: 0;
+    }
+
     h3 {
       font-size: 36px;
       font-weight: 800;
@@ -111,11 +115,27 @@
 
     .feature-list {
       margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
 
       .feature-item {
         display: flex;
         align-items: flex-start;
         margin-bottom: 30px;
+
+        &.feature-text-inline {
+          justify-content: center;
+          width: fit-content;
+          margin: 0 auto;
+
+          .feature-text {
+            text-align: center;
+
+            .nowrap {
+              white-space: nowrap;
+            }
+          }
+        }
 
         .feature-icon {
           width: 50px;

@@ -2236,6 +2236,10 @@ section,
   padding-left: 30px;
 }
 
+.why-us .feature-content.text-center {
+  padding-left: 0;
+}
+
 .why-us .feature-content h3 {
   font-size: 36px;
   font-weight: 800;
@@ -2253,6 +2257,8 @@ section,
 
 .why-us .feature-content .feature-list {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .why-us .feature-content .feature-list .feature-item {
@@ -2263,10 +2269,16 @@ section,
 
 .why-us .feature-content .feature-list .feature-item.feature-text-inline {
   justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .why-us .feature-content .feature-list .feature-item.feature-text-inline .feature-text {
   text-align: center;
+}
+
+.why-us .feature-content .feature-list .feature-item.feature-text-inline .feature-text .nowrap {
+  white-space: nowrap;
 }
 
 .why-us .feature-content .feature-list .feature-item .feature-icon {
