@@ -187,6 +187,9 @@ h6 {
 
 .image-viewer {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-viewer-slide {
@@ -195,6 +198,36 @@ h6 {
 
 .image-viewer-slide.is-active {
   display: block;
+}
+
+.image-viewer-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.2s ease;
+}
+
+.image-viewer-control:hover,
+.image-viewer-control:focus {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.image-viewer-control.prev {
+  left: 12px;
+}
+
+.image-viewer-control.next {
+  right: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -1782,12 +1815,14 @@ section,
   padding: 0;
   display: grid;
   gap: 12px;
-  font-size: 18px;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.3;
   color: var(--heading-color);
 }
 
 .features-2 .features-2-list li {
-  font-weight: 400;
+  font-weight: inherit;
 }
 
 .features-2 .features-image {
