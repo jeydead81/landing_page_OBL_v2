@@ -190,14 +190,59 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  max-width: 540px;
+  min-height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
 }
 
 .image-viewer-slide {
-  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease-in-out;
 }
 
 .image-viewer-slide.is-active {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-viewer-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.2s ease;
+}
+
+.image-viewer-control:hover,
+.image-viewer-control:focus {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.image-viewer-control.prev {
+  left: 12px;
+}
+
+.image-viewer-control.next {
+  right: 12px;
 }
 
 .image-viewer-control {
