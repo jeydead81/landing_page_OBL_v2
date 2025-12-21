@@ -129,8 +129,24 @@
           .feature-text {
             text-align: center;
 
-            .nowrap {
-              white-space: nowrap;
+            .negative-lines {
+              display: inline-flex;
+              flex-direction: column;
+              gap: 6px;
+              align-items: flex-start;
+              text-align: left;
+            }
+
+            .negative-line {
+              display: flex;
+              align-items: flex-start;
+              gap: 8px;
+            }
+
+            .negative-icon {
+              width: 1.4em;
+              flex: 0 0 1.4em;
+              text-align: center;
             }
           }
         }
