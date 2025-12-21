@@ -2747,6 +2747,18 @@ section,
   transform: translateY(-10px) scale(1.03);
 }
 
+.pricing .pricing-item.featured .card-price {
+  background-color: var(--accent-color);
+}
+
+.pricing .pricing-item.featured .card-price h4 {
+  color: var(--contrast-color);
+}
+
+.pricing .pricing-item.featured .card-price .period {
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
+}
+
 .pricing .pricing-item.featured .card-action .btn-pricing {
   background-color: var(--accent-color);
   color: var(--contrast-color);
