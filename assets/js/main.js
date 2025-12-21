@@ -120,10 +120,23 @@
     const pricingSwitch = container.querySelector('.pricing-toggle input[type="checkbox"]');
     const monthlyText = container.querySelector('.monthly');
     const yearlyText = container.querySelector('.yearly');
+    const pricingItems = container.querySelectorAll('.pricing-item');
+
+    if (pricingSwitch.checked) {
+      monthlyText.classList.remove('active');
+      yearlyText.classList.add('active');
+      pricingItems.forEach(item => {
+        item.classList.add('yearly-active');
+      });
+    } else {
+      monthlyText.classList.add('active');
+      yearlyText.classList.remove('active');
+      pricingItems.forEach(item => {
+        item.classList.remove('yearly-active');
+      });
+    }
 
     pricingSwitch.addEventListener('change', function() {
-      const pricingItems = container.querySelectorAll('.pricing-item');
-
       if (this.checked) {
         monthlyText.classList.remove('active');
         yearlyText.classList.add('active');

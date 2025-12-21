@@ -2918,6 +2918,15 @@ section,
   transform: translateY(-3px);
 }
 
+.pricing .token-equivalence {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pricing .token-equivalence p {
+  margin-bottom: 8px;
+}
+
 @media (max-width: 991px) {
   .pricing .pricing-item.featured {
     transform: scale(1);
