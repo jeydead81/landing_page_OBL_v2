@@ -194,6 +194,27 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
   /**
+   * Demo modal video handling
+   */
+  const demoModal = document.getElementById('demoModal');
+  if (demoModal) {
+    const videoFrame = demoModal.querySelector('[data-demo-video]');
+    const videoSrc = videoFrame ? videoFrame.getAttribute('data-video-src') : '';
+
+    demoModal.addEventListener('shown.bs.modal', () => {
+      if (videoFrame && videoSrc) {
+        videoFrame.setAttribute('src', videoSrc);
+      }
+    });
+
+    demoModal.addEventListener('hidden.bs.modal', () => {
+      if (videoFrame) {
+        videoFrame.setAttribute('src', '');
+      }
+    });
+  }
+
+  /**
    * Hero typed animation
    */
   const typedElement = document.querySelector('.typed');
