@@ -282,9 +282,9 @@
   /**
    * Steps video hover autoplay
    */
-  const stepsVideoFrame = document.getElementById('steps-video-player');
+  const stepsVideoFrames = document.querySelectorAll('[data-steps-video]');
 
-  if (stepsVideoFrame) {
+  if (stepsVideoFrames.length) {
     const firstScriptTag = document.getElementsByTagName('script')[0];
     const existingApi = document.querySelector('script[src="https://www.youtube.com/iframe_api"]');
 
@@ -301,25 +301,31 @@
         previousApiReady();
       }
 
-      const stepsVideoPlayer = new YT.Player('steps-video-player', {
-        events: {
-          onReady: (event) => {
-            const stepImage = stepsVideoFrame.closest('.step-image');
-            if (!stepImage) return;
-
-            const handleEnter = () => {
-              event.target.mute();
-              event.target.playVideo();
-            };
-
-            const handleLeave = () => {
-              event.target.pauseVideo();
-            };
-
-            stepImage.addEventListener('mouseenter', handleEnter);
-            stepImage.addEventListener('mouseleave', handleLeave);
-          }
+      stepsVideoFrames.forEach((frame) => {
+        if (!frame.id) {
+          return;
         }
+
+        new YT.Player(frame.id, {
+          events: {
+            onReady: (event) => {
+              const stepImage = frame.closest('.step-image');
+              if (!stepImage) return;
+
+              const handleEnter = () => {
+                event.target.mute();
+                event.target.playVideo();
+              };
+
+              const handleLeave = () => {
+                event.target.pauseVideo();
+              };
+
+              stepImage.addEventListener('mouseenter', handleEnter);
+              stepImage.addEventListener('mouseleave', handleLeave);
+            }
+          }
+        });
       });
     };
   }
