@@ -279,4 +279,49 @@
     }
   });
 
+  /**
+   * Steps video hover autoplay
+   */
+  const stepsVideoFrame = document.getElementById('steps-video-player');
+
+  if (stepsVideoFrame) {
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    const existingApi = document.querySelector('script[src="https://www.youtube.com/iframe_api"]');
+
+    if (!existingApi) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    const previousApiReady = window.onYouTubeIframeAPIReady;
+
+    window.onYouTubeIframeAPIReady = function() {
+      if (typeof previousApiReady === 'function') {
+        previousApiReady();
+      }
+
+      const stepsVideoPlayer = new YT.Player('steps-video-player', {
+        events: {
+          onReady: (event) => {
+            const stepImage = stepsVideoFrame.closest('.step-image');
+            if (!stepImage) return;
+
+            const handleEnter = () => {
+              event.target.mute();
+              event.target.playVideo();
+            };
+
+            const handleLeave = () => {
+              event.target.pauseVideo();
+            };
+
+            stepImage.addEventListener('mouseenter', handleEnter);
+            stepImage.addEventListener('mouseleave', handleLeave);
+          }
+        }
+      });
+    };
+  }
+
 })();
