@@ -123,6 +123,12 @@ h6 {
   display: inline-block;
 }
 
+.btn-getstarted.demo-cta,
+.btn-getstarted.demo-cta:focus {
+  font-size: 22px;
+  padding: 13px 32px;
+}
+
 .btn-getstarted:hover,
 .btn-getstarted:focus:hover {
   color: var(--contrast-color);
