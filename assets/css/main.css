@@ -2897,6 +2897,15 @@ section,
   color: var(--contrast-color);
 }
 
+.pricing .pricing-item.price-highlight {
+  border: 2px solid var(--accent-color);
+}
+
+.pricing .pricing-item.price-highlight .card-action .btn-pricing {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
 .pricing .pricing-item .price.yearly {
   display: none;
 }
@@ -3054,6 +3063,14 @@ section,
 .pricing .token-equivalence {
   margin-top: 30px;
   text-align: center;
+}
+
+.pricing .token-equivalence-box {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  background-color: color-mix(in srgb, var(--background-color), #ffffff 70%);
 }
 
 .pricing .token-equivalence p {
