@@ -2889,6 +2889,14 @@ section,
   color: var(--contrast-color);
 }
 
+.pricing .pricing-item.price-highlight .card-price {
+  background-color: var(--accent-color);
+}
+
+.pricing .pricing-item.price-highlight .card-price h4 {
+  color: var(--contrast-color);
+}
+
 .pricing .pricing-item .price.yearly {
   display: none;
 }
