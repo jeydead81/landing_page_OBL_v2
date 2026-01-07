@@ -49,11 +49,6 @@ h6 {
   }
 }
 
-.btn-getstarted.demo-cta,
-.btn-getstarted.demo-cta:focus {
-  font-size: 22px;
-  padding: 13px 32px;
-}
 
 .cta-wrapper {
   display: flex;
@@ -77,4 +72,11 @@ h6 {
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
   }
+}
+
+.cta-button.demo-cta,
+.cta-button.demo-cta:focus {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 22px 64px;
 }
