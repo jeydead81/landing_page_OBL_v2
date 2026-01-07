@@ -123,6 +123,7 @@ h6 {
   display: inline-block;
 }
 
+
 .btn-getstarted:hover,
 .btn-getstarted:focus:hover {
   color: var(--contrast-color);
@@ -2183,6 +2184,7 @@ section,
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
+
 
 @media (max-width: 768px) {
   .features-3 {
