@@ -49,6 +49,12 @@ h6 {
   }
 }
 
+.btn-getstarted.demo-cta,
+.btn-getstarted.demo-cta:focus {
+  font-size: 22px;
+  padding: 13px 32px;
+}
+
 .cta-wrapper {
   display: flex;
   justify-content: center;
