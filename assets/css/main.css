@@ -3024,6 +3024,37 @@ section,
   margin-bottom: 8px;
 }
 
+.demo-modal .modal-content {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.demo-modal .modal-header {
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 75%);
+}
+
+.demo-modal .modal-title {
+  color: var(--heading-color);
+}
+
+.demo-modal .btn-close {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+.demo-modal .btn-close:hover {
+  opacity: 1;
+}
+
+.demo-modal .ratio {
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
+}
+
 @media (max-width: 991px) {
   .pricing .pricing-item.featured {
     transform: scale(1);
