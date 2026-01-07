@@ -1009,6 +1009,10 @@ section,
   .hero-size-heading {
     font-size: 2.45rem;
   }
+
+  .problem-emphasis {
+    font-size: 2.45rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1020,6 +1024,10 @@ section,
   .hero-size-heading {
     font-size: 1.96rem;
   }
+
+  .problem-emphasis {
+    font-size: 1.96rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1028,6 +1036,10 @@ section,
   }
 
   .hero-size-heading {
+    font-size: 1.54rem;
+  }
+
+  .problem-emphasis {
     font-size: 1.54rem;
   }
 }
@@ -1055,12 +1067,14 @@ section,
 }
 
 .match-h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .problem-emphasis {
-  font-size: 1.15em;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
 @media (max-width: 768px) {
@@ -1633,19 +1647,23 @@ section,
 .about-2 .about-image {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
 
 .about-2 .about-visual {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 16px;
 }
 
 @media (max-width: 991px) {
+  .match-h3 {
+    font-size: 1.3rem;
+  }
+
   .about-2 .about-image {
     height: auto;
   }
@@ -1656,7 +1674,17 @@ section,
   }
 }
 
+@media (max-width: 768px) {
+  .match-h3 {
+    font-size: 1.2rem;
+  }
+}
+
 .about-2 .about-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-top: 30px;
   max-width: 560px;
   margin-left: auto;
