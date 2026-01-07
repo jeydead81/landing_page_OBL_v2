@@ -123,6 +123,7 @@ h6 {
   display: inline-block;
 }
 
+
 .btn-getstarted:hover,
 .btn-getstarted:focus:hover {
   color: var(--contrast-color);
@@ -2182,6 +2183,13 @@ section,
   color: var(--accent-color);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.cta-button.demo-cta,
+.cta-button.demo-cta:focus {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 22px 64px;
 }
 
 @media (max-width: 768px) {
